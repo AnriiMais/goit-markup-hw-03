@@ -25,9 +25,7 @@ ul {
   margin: 0px;
   padding: 0px;
 }
-.container {
-  margin: 0px auto;
-}
+
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -58,12 +56,13 @@ a {
 /* header */
 .container {
   width: 1200px;
-
-  padding: 15px;
+  margin: 0px auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-.container.greeting {
+/* .container.greeting {
   background-color: var(--head-foot-bgcolor);
-}
+} */
 .container.headstyle {
   display: flex;
   justify-content: space-between;
@@ -83,12 +82,12 @@ a {
   display: flex;
   margin-left: auto;
 }
-.list.link + .list.link {
+.list-nav + .list-nav {
   margin-left: 50px;
 }
 .link {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 /* логотип */
@@ -100,9 +99,9 @@ a {
   font-size: 26px;
   line-height: 1.19;
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-right: 95px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-right: 93px;
 }
 .logo:focus,
 .logo:hover {
@@ -141,8 +140,8 @@ a {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .contacts-item + .contacts-item {
   margin-left: 50px;
@@ -154,15 +153,13 @@ a {
 /* Приветствие */
 .greeting {
   background-color: var(--head-foot-bgcolor);
-  padding: 15px;
   text-align: center;
 }
-.greet-box {
-  background-color: var(--head-foot-bgcolor);
+.greet-box.container {
   color: var(--btn-prime-color);
   display: inline-block;
   text-align: center;
-  padding: 200px 0px;
+  padding: 200px 15px;
 }
 .greeting-title {
   background-color: var(--head-foot-bgcolor);
@@ -174,9 +171,11 @@ a {
   font-size: 44px;
   line-height: 1.36;
 
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .primary.button {
   color: var(--btn-prime-color);
@@ -196,8 +195,10 @@ a {
   border-radius: 2px;
 }
 /* Список преимуществ */
+.features.container {
+}
 
-. .features-list > .features-title {
+.features-list > .features-title {
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -208,25 +209,26 @@ a {
 .features-list {
   display: flex;
   align-items: baseline;
-  margin-top: 95px;
+  padding-bottom: 95px;
+  padding-top: 95px;
 }
 .features-item + .features-item {
   margin-left: 30px;
 }
 /* чем заняты */
-.section-title {
+.examples-work-title {
   color: var(--title-text-color);
 
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-
-  margin-top: 40px;
+  text-transform: uppercase;
 }
 .examples-list {
   display: flex;
-  margin-top: 30px;
+  padding-top: 50px;
+  padding-bottom: 93px;
 }
 .examples-item + .examples-item {
   margin-left: 30px;
@@ -235,28 +237,41 @@ a {
   display: block;
 }
 /* Команда молодости нашей */
-.body-page .profile-list {
-  background-color: #f5f4fa;
+.team.container {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
-.profile h3 {
+.profile .name {
   color: var(--title-text-color);
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 }
-.profile p {
+.profile .profession {
   font-size: 16px;
   line-height: 1.19;
+}
+.profile .profile-description {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .team {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.team-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  text-transform: uppercase;
+}
 .profile {
   display: flex;
-  margin-top: 53px;
+  padding-top: 50px;
 }
 .team-item + .team-item {
   margin-left: 30px;
@@ -265,18 +280,16 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.name {
-  margin-top: 33px;
+  text-align: center;
 }
 .profession {
-  margin-top: 12px;
+  margin-top: 10px;
 }
 
 /* Футер */
-/* .footer-section {
+.footer-section {
   background-color: var(--head-foot-bgcolor);
-} */
+}
 .foot-logo {
   color: #ffffff;
 
@@ -296,6 +309,8 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+
+  margin-top: 20px;
 }
 .footer-section .foot-link {
   color: rgba(255, 255, 255, 0.6);
@@ -307,9 +322,9 @@ a {
 .footer-section .foot-link:focus {
   color: var(--accent-color);
 }
-.footer-section.container {
-  padding-top: 40px;
-  padding-bottom: 40px;
+.container.basement {
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   background-color: var(--head-foot-bgcolor);
 }

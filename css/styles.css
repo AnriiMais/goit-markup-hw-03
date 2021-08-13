@@ -30,6 +30,9 @@ ul {
 ul {
   list-style: none;
 }
+/* li {
+  display: inline-block;
+} */
 
 .image {
   display: flex;
@@ -212,8 +215,10 @@ a {
   padding-bottom: 47px;
   padding-top: 95px;
 }
-
-.features > .features-list .features-title {
+.features-item {
+  width: 270px;
+}
+.features-title {
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -223,7 +228,6 @@ a {
 .features-list {
   display: flex;
   align-items: baseline;
-  /* list-style: none; */
 }
 .features-item + .features-item {
   margin-left: 30px;
@@ -245,7 +249,6 @@ a {
 .examples-list {
   display: flex;
   margin-top: 50px;
-  /* padding-bottom: 93px; */
 }
 .examples-item + .examples-item {
   margin-left: 30px;
@@ -255,8 +258,6 @@ a {
 .team-list {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-.team.container {
 }
 
 .profile .name {
@@ -307,6 +308,8 @@ a {
 /* Футер */
 .footer-section {
   background-color: var(--head-foot-bgcolor);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .foot-logo {
   color: #ffffff;
@@ -315,6 +318,7 @@ a {
   font-weight: 700;
   font-size: 26px;
   line-height: 1, 19;
+  /* display: flex; */
 }
 .footstyle {
   color: #2196f3;
@@ -325,7 +329,7 @@ a {
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
-  /* font-size: 14px; */
+
   line-height: 1.71;
 
   margin-top: 20px;
@@ -333,21 +337,27 @@ a {
 .footer-section .foot-link {
   color: rgba(255, 255, 255, 0.6);
 
-  /* font-size: 14px; */
   line-height: 1.71;
+}
+.footer-section .ident .foot-link {
+  margin-top: 9px;
 }
 .footer-section .foot-link:hover,
 .footer-section .foot-link:focus {
   color: var(--accent-color);
 }
-.container.basement {
-  padding-top: 60px;
-  padding-bottom: 60px;
 
-  background-color: var(--head-foot-bgcolor);
-}
+/* .list-ident {
+  display: flex;
+  flex-direction: column;
+  margin: 9px 0;
+} */
+
 /* Страница портфолио */
 /* контент main */
+.very-good {
+  padding: 94px 0;
+}
 
 .filter .btn.primary {
   color: var(--title-text-color);
@@ -388,11 +398,12 @@ a {
   font-size: 16px;
   line-height: 1.87;
 }
-/* .container.content {
-  display: flex;
- flex-direction: column;
-  align-items: center;
-} */
+.container.content {
+  /* padding: 94px 0; */
+  /* display: flex; */
+  /* flex-direction: column;
+  align-items: center; */
+}
 
 .filter {
   display: flex;
@@ -421,7 +432,11 @@ a {
 }
 
 .item-title {
-  padding-top: 20px;
+  margin-top: 20px;
+}
+.item {
+  margin-top: 4px;
+  margin-bottom: 20px;
 }
 .hidden-title {
   position: absolute;

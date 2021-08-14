@@ -30,9 +30,6 @@ ul {
 ul {
   list-style: none;
 }
-/* li {
-  display: inline-block;
-} */
 
 .image {
   display: flex;
@@ -69,16 +66,14 @@ a {
   font-size: 14px;
 } */
 
-/* header */
+/* - - -- - -- - -- header  -- - -- -- - - --- - -*/
 .container {
   width: 1200px;
   margin: 0px auto;
   padding-left: 15px;
   padding-right: 15px;
 }
-/* .container.greeting {
-  background-color: var(--head-foot-bgcolor);
-} */
+
 .container.headstyle {
   display: flex;
   justify-content: space-between;
@@ -106,7 +101,7 @@ a {
   padding-bottom: 32px;
 }
 
-/* логотип */
+/* - - -- - -- - -- логотип  -- - -- - -- - -- -*/
 .logo {
   color: #000000;
 
@@ -130,7 +125,7 @@ a {
 .logostyle:focus {
   color: #000000;
 }
-/* навигация */
+/*  -- - - -- -- - -- --навигация -- - -- - - -- - -  */
 .site-nav .link {
   color: var(--title-text-color);
 
@@ -146,7 +141,7 @@ a {
 .site-nav .link.current {
   color: var(--accent-color);
 }
-/* контакты */
+/* - -- - --- - - -- - - --  контакты- - -- - -- - - - */
 
 .contacts-link {
   color: var(--primary-text-color);
@@ -166,7 +161,7 @@ a {
 .contacts-link:focus {
   color: var(--accent-color);
 }
-/* Приветствие */
+/* - - - -- - -- - -Приветствие- - - - - -- -- - --  */
 .greeting {
   background-color: var(--head-foot-bgcolor);
   text-align: center;
@@ -210,7 +205,7 @@ a {
   border: 1px solid transparent;
   border-radius: 2px;
 }
-/* Список преимуществ */
+/* - - -- -- - -- Список преимуществ -- - - -- - - */
 .features {
   padding-bottom: 47px;
   padding-top: 95px;
@@ -232,7 +227,7 @@ a {
 .features-item + .features-item {
   margin-left: 30px;
 }
-/* чем заняты */
+/* - - -- - -- -- чем заняты- - - -- - -- -- - */
 .work {
   padding-bottom: 94px;
   padding-top: 47px;
@@ -254,7 +249,7 @@ a {
   margin-left: 30px;
 }
 
-/* Команда молодости нашей */
+/*  - -- - --Команда молодости нашей- - - -- - */
 .team-list {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -305,7 +300,7 @@ a {
   margin-top: 10px;
 }
 
-/* Футер */
+/*-- -- -- -- -- --  Футер - - - -- -- -- -  --- -*/
 .footer-section {
   background-color: var(--head-foot-bgcolor);
   padding-top: 60px;
@@ -346,12 +341,6 @@ a {
 .footer-section .foot-link:focus {
   color: var(--accent-color);
 }
-
-/* .list-ident {
-  display: flex;
-  flex-direction: column;
-  margin: 9px 0;
-} */
 
 /* Страница портфолио */
 /* контент main */
@@ -398,13 +387,6 @@ a {
   font-size: 16px;
   line-height: 1.87;
 }
-.container.content {
-  /* padding: 94px 0; */
-  /* display: flex; */
-  /* flex-direction: column;
-  align-items: center; */
-}
-
 .filter {
   display: flex;
   justify-content: center;

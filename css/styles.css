@@ -32,7 +32,7 @@ ul {
 }
 
 .image {
-  display: flex;
+  display: block;
 }
 
 :root {
@@ -67,6 +67,9 @@ a {
 } */
 
 /* - - -- - -- - -- header  -- - -- -- - - --- - -*/
+.head {
+  border-bottom: 1px solid #ececec;
+}
 .container {
   width: 1200px;
   margin: 0px auto;
@@ -165,7 +168,7 @@ a {
 .greeting {
   background-color: var(--head-foot-bgcolor);
   text-align: center;
-  padding: 200px 15px;
+  padding: 200px 0;
 }
 .greet-box.container {
   color: var(--btn-prime-color);
@@ -219,10 +222,11 @@ a {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  margin-bottom: 10px;
 }
 .features-list {
   display: flex;
-  align-items: baseline;
+  /* align-items: baseline; */
 }
 .features-item + .features-item {
   margin-left: 30px;
@@ -244,6 +248,9 @@ a {
 .examples-list {
   display: flex;
   margin-top: 50px;
+}
+.examples-item {
+  width: 370px;
 }
 .examples-item + .examples-item {
   margin-left: 30px;
@@ -267,14 +274,11 @@ a {
   line-height: 1.19;
 }
 .profile .profile-description {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
 }
-.team {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 .team-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -291,10 +295,7 @@ a {
   margin-left: 30px;
 }
 .team-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  width: 270px;
 }
 .profession {
   margin-top: 10px;
@@ -313,7 +314,6 @@ a {
   font-weight: 700;
   font-size: 26px;
   line-height: 1, 19;
-  /* display: flex; */
 }
 .footstyle {
   color: #2196f3;
@@ -341,13 +341,22 @@ a {
 .footer-section .foot-link:focus {
   color: var(--accent-color);
 }
-
+.ident {
+  margin-top: 9px;
+}
+.address-text.ident {
+  margin-top: 20px;
+}
 /* Страница портфолио */
 /* контент main */
-.very-good {
+.prime {
   padding: 94px 0;
 }
-
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
 .filter .btn.primary {
   color: var(--title-text-color);
 
@@ -387,17 +396,14 @@ a {
   font-size: 16px;
   line-height: 1.87;
 }
-.filter {
-  display: flex;
-  justify-content: center;
-}
+
 .item-btn + .item-btn {
   margin-left: 8px;
 }
 .btn {
   background-color: transparent;
   border: 1px transparent;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 .work-list {
   display: flex;
@@ -412,14 +418,19 @@ a {
 .list-item:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
 }
-
-.item-title {
-  margin-top: 20px;
+.description-card {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid #eeeeee;
+  border-top: 0px;
 }
-.item {
+/* .item-title {
+  margin-top: 20px;
+} */
+/* .item {
   margin-top: 4px;
   margin-bottom: 20px;
-}
+} */
 .hidden-title {
   position: absolute;
   width: 1px;
